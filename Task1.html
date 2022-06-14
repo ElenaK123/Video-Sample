@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+
+        <style>
+            .Button{
+                background-color: #2ecc71;
+                border-radius: 50%;
+                border: none;
+                height: 50px;
+                width: 50px;
+                font-size: 30px;
+            }
+
+            .Green{
+                background-color: green;
+                color:#fff;
+            }
+
+             .ToolTip{
+                display: none;
+                background-color: lightblue;
+                padding: 30px;
+                width: 200px;
+                height: 200px;
+            }
+
+            .Green + .ToolTip{
+                display: block;
+            }
+        </style>
+    </head>
+
+    <body>
+        <input 
+            type="button" 
+            class="Button" 
+            value="+" 
+            onclick="onPlussClicked(event)"
+        />
+        <p class="ToolTip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut cumque ratione ex. Repudiandae dolorum a fugit officiis? Libero numquam, quaerat ducimus ipsum omnis enim consectetur tenetur. Cumque autem consequatur consectetur.</p>
+
+        <script>
+            function onPlussClicked(event){
+                if( event.target.getAttribute('value') == '+' ){
+                    event.target.setAttribute('value', '-');
+                    event.target.classList.add('Green');
+                } else{
+                    event.target.setAttribute('value', '+');
+                    event.target.classList.remove('Green');
+                }
+            }
+        </script>
+    </body>
+</html>
