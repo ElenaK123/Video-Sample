@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Please fill the form</h1>
+    <form action="">
+    <h2>Creating new article</h2>
+    <div>
+        <label for="article_by">Article by:</label>
+        <input type= "text"
+        id="article_by"
+        placeholder="example"
+        name="articleCreator"/>
+    </div>
+    <br/>
+    <div>
+        <label for="article_title">Article title:</label>
+        <input type="text"/>
+    </div>
+    <br/>
+    <div>
+        <label for="atricle_picture">Select picture</label>
+        <input id="atricle_picture" type="file"/>
+    </div>
+    <br/>
+    <div>
+        <label for="article_body">Article body</label>
+        <textarea id="article_body"></textarea>
+    </div>
+    <br/>
+    <div>
+        <label>Image position:</label>
+            <br/>
+            <label for="picure_left">left:</label>
+            <input id="picure_left"
+            type="radio"
+            name="imagePositiom"
+            value="left"/>
+            <br/>
+            <label for="picture_right">right:</label>
+            <input id="picture_right"
+            type= "radio"
+            name="imagePosition"
+            value="right"/>
+    </div>
+    <br/>
+            <div>
+                <label for="picture_left">Show date:</label>
+                <input id="picture_left"
+                type="checkbox"
+                name="imagePosition"/>
+                <br/>
+                <label for="picture_right">Use two columns</label>
+                <input id="tpicture_right"
+                type="checkbox"
+                name="imagePosition"/>
+            </div>
+
+
+    </div>
+    <br>
+    <input type="submit"/>
+    </form>
+</body>
+</html>
